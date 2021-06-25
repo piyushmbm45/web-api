@@ -17,6 +17,16 @@ button.addEventListener('click', function () {
         text = "Value is Ok"
     }
     document.getElementById("demo1").innerHTML = text;
+    // rangeUnderrflow property
+    let text1;
+    if(inpObj.validity.rangeUnderflow){
+        text1 = "Value is Too Small"
+    }
+    else{
+        text1 = "Value is Ok"
+    }
+    document.getElementById("demo2").innerHTML = text1;
+
 });
 
 
